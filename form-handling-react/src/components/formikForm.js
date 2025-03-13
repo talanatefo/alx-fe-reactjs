@@ -1,23 +1,22 @@
-//import { useFormik } from "formik";
 import { useState } from "react";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
-function RegistrationForm() {
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+function FormikForm() {
+  const formik = useFormik({
+    initialValues: { name: "", email: "", password: "" },
 
-  // const formik = useFormik({
-  // initialValues: { name: "", email: "", password: "" },
+    validationSchema: Yup.object({
+      name: Yup.string(),
+      
+      email: Yup.string(),
+       .email("Incorrect email")
+      .required("Email is required")
 
-  //  validationSchema: Yup.object({
-  //   name: Yup.string(),
-  //  email: Yup.string(),
-  //  .email("Incorrect password or email"),
-  //.required("Email is required"),
-  //.password: Yup.string(),
-  // }),
-  // });
+      .password: Yup.string(),
+      .required("password is required")
+    }),
+  });
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -70,4 +69,5 @@ function RegistrationForm() {
     </form>
   );
 }
-export default RegistrationForm;
+
+export default FormikForm;
