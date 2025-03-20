@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "/images/chickenmeal.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
+    "image": "https://source.unsplash.com/150x150/?chicken,curry"
+  },
+  {
+    "id": 3,
+    "title": "Margherita Pizza",
+    "summary": "Classic Italian pizza with tomato, mozzarella, fresh basil, and olive oil.",
+    "image": "https://source.unsplash.com/150x150/?pizza"
+  },
+  {
+    "id": 4,
+    "title": "Beef Stroganoff",
+    "summary": "Tender strips of beef in a creamy mushroom sauce, served over egg noodles.",
+    "image": "https://source.unsplash.com/150x150/?beef,stroganoff"
+  }
+]
