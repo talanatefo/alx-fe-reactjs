@@ -9,16 +9,16 @@ function HomePage() {
   useEffect(() => setRecipes(data), []);
 
   return (
-    <div className="bg-green-300 ">
-      <h1 className="text-xl">HomePage</h1>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4">
+    <div className=" px-2px">
+      <h1 className="text-xl mx-auto">HomePage</h1>
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 w-196 h-196 px-5px mx-10px">
         {recipes.map((recipe) => (
           <div key={recipe.id}>
-            <div className="rounded-md bg-white px-2 py-2">
+            <div className="rounded-md bg-yellow-300 px-2 py-2 border-2 hover:bg-green-300 shadow-lg shadow-pink-500/50 ">
               <p className="text-xl">{recipe.title}</p>
               <p>{recipe.summary}</p>
               <img
-                className="w-100"
+                className="w-120 h-120 rounded-full border-1  "
                 src="{recipe.img}" //alt="food"
               />
             </div>
